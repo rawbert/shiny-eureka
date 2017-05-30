@@ -5,23 +5,66 @@
 </head>
 <body>
     <h1>Unified signup</h1>
-    <div id="api" data-name="IdpSelections">
-        <div class="intro">
-            <p>Sign up</p>
+    <div id="api" data-name="IdpSelections" style="">
+
+        <div class="social" role="form">
+            <div class="intro">
+                <h2>Logga in med ditt sociala konto</h2>
+            </div>
+            <div class="options">
+                <div>
+                    <button class="accountButton firstButton" id="FacebookExchange" tabindex="1">Facebook</button>
+                </div>
+            </div>
         </div>
 
-        <div>
-            <ul>
-                <li>
-                    <button class="accountButton" id="FacebookExchange">Facebook</button>
-                </li>
-                <li>
-                    <button class="accountButton" id="GoogleExchange">Google+</button>
-                </li>
-                <li>
-                    <button class="accountButton" id="SignUpWithLogonEmailExchange">Email</button>
-                </li>
-            </ul>
+        <div class="divider">
+            <h2>ELLER</h2>
+        </div>
+
+        <div class="localAccount" role="form">
+            <div class="intro">
+                <h2>
+                    Logga in med ditt befintliga konto
+                </h2>
+            </div>
+            <div class="error pageLevel" aria-hidden="true" style="display: none;">
+                <p role="alert"></p>
+            </div>
+            <div class="entry">
+                <div class="entry-item">
+                    <label for="logonIdentifier">
+                        E-postadress
+                    </label>
+                    <div class="error itemLevel" aria-hidden="true" style="display: none;">
+                        <p role="alert"></p>
+                    </div>
+                    <input type="email" id="logonIdentifier" name="Username or email address" pattern="^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" placeholder="E-postadress" value="" tabindex="1">
+                </div>
+                <div class="entry-item">
+                    <div class="password-label">
+                        <label for="password">Lösenord</label>
+                        <a id="forgotPassword" tabindex="2" href="/ncgcmdb2cdev.onmicrosoft.com/B2C_1_robert_test/api/CombinedSigninAndSignup/forgotPassword?csrf_token=WTV5SHNGOU11WGZyUHZ1SUtFRlhzRXpkdUYyMm80TnB1dXYrMVhieGRrdHR4WldpNHU1WlNmdUlsU01HbTh0L09aRHMyWnRrTEU3R3dEU3NkcWVWcEE9PTsyMDE3LTA1LTMwVDEyOjUwOjU5LjI1MzI4NzlaO1MwQmtUL0hQN1BYWVRmVGdwQ20yMFE9PTt7Ik9yY2hlc3RyYXRpb25TdGVwIjoxfQ==&amp;tx=eyJUSUQiOiIxZDRmNzI5Mi01MTZlLTRmYTktYmQzZi0xNjVkMThjMmQyODQifQ&amp;p=B2C_1_robert_test">Har du glömt ditt lösenord?</a>
+                    </div>
+                    <div class="error itemLevel" aria-hidden="true" style="display: none;">
+                        <p role="alert"></p>
+                    </div>
+                    <input type="password" id="password" name="Lösenord" placeholder="Lösenord" tabindex="1">
+                </div>
+                <div class="working"></div>
+                <div class="buttons">
+                    <button id="next" tabindex="1">Logga in</button>
+                </div>
+            </div>
+
+            <div class="divider">
+                <h2>ELLER</h2>
+            </div>
+            <div class="create">
+                <p>
+                    Har du inte något konto?<a id="createAccount" tabindex="1" href="/ncgcmdb2cdev.onmicrosoft.com/B2C_1_robert_test/api/CombinedSigninAndSignup/unified?local=signup&amp;csrf_token=WTV5SHNGOU11WGZyUHZ1SUtFRlhzRXpkdUYyMm80TnB1dXYrMVhieGRrdHR4WldpNHU1WlNmdUlsU01HbTh0L09aRHMyWnRrTEU3R3dEU3NkcWVWcEE9PTsyMDE3LTA1LTMwVDEyOjUwOjU5LjI1MzI4NzlaO1MwQmtUL0hQN1BYWVRmVGdwQ20yMFE9PTt7Ik9yY2hlc3RyYXRpb25TdGVwIjoxfQ==&amp;tx=eyJUSUQiOiIxZDRmNzI5Mi01MTZlLTRmYTktYmQzZi0xNjVkMThjMmQyODQifQ&amp;p=B2C_1_robert_test">Registrera dig nu</a>
+                </p>
+            </div>
         </div>
     </div>
 </body>
