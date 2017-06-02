@@ -1,0 +1,196 @@
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+ul,ol,li{
+    margin:0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    width:100%!important;
+    margin:0!important;
+}
+
+html,body{
+    font-family:  Helvetica,Arial, sans-serif!important;
+    
+}
+
+#api {
+    max-width:26.25rem; 
+    margin:0 auto;
+
+    background:#fff;
+    padding:8rem 1.25rem 4.5rem 1.25rem;
+
+    
+    position:relative;
+}
+
+@media (min-width: 34rem) {
+    html{
+        background: url("https://rawbert.github.io/shiny-eureka/b2c/img/new_curtain.jpg")!important;
+        background-size:cover!important;
+    }
+    #api {
+        margin:4rem auto;
+        min-height:0;
+        padding:8rem 3rem 4.5rem 3rem;
+        border-radius:0.125rem 0.125rem 0.125rem 0.125rem!important;
+        box-shadow:0 0.625rem 2rem rgba(0,0,0,0.24)!important;
+    }
+}
+
+#password,
+#logonIdentifier{
+    width:100%;
+    background:#f8f8f8;
+    border:0;
+    height:2.5rem;
+    line-height:2.5rem;
+    padding:0 0.625rem;
+    margin:1rem 0 0 0;
+    border-radius:none!important;
+    box-shadow:0 -0.0625rem 0 0 rgba(0, 0, 0, 0.2) inset!important;
+}
+
+#next{
+    width:100%!important;
+    margin:0!important;
+    border:0!important;
+    height:2.5rem!important;
+    line-height:2.5rem!important;
+    padding:0 0.625rem!important;
+    font-size:1rem!important;
+    line-height:2.5rem!important;
+    font-weight:bold!important;
+    border-radius:0.125rem 0.125rem 0.125rem 0.125rem!important;
+    box-shadow:0 -0.1875rem 0 0 rgba(0, 0, 0, 0.2) inset!important;
+    max-width:100%;
+    cursor:pointer!important;
+}
+
+#createAccount{
+    display:block!important;
+    text-align: center;
+    width:100%!important;
+    margin:1rem 0!important;
+    border:0!important;
+    background:#c6102d!important;
+    height:2.5rem!important;
+    line-height:2.5rem!important;
+    padding:0 1.25rem!important;
+    color:#fff1d9!important;
+    font-size:1rem!important;
+    line-height:2.5rem!important;
+    font-weight:bold!important;
+    border-radius:0.125rem 0.125rem 0.125rem 0.125rem!important;
+    box-shadow:0 -0.1875rem 0 0 rgba(0, 0, 0, 0.2) inset!important;
+    cursor:pointer!important;
+    text-decoration:none;
+}
+
+#FacebookExchange{
+    display:block!important;
+    text-align: center;
+    width:100%!important;
+    margin:0!important;
+    border:0!important;
+    background:#3b5998!important;
+    height:2.5rem!important;
+    line-height:2.5rem!important;
+    padding:0 1.25rem!important;
+    color:#f7f7f7!important;
+    font-size:1rem!important;
+    line-height:2.5rem!important;
+    font-weight:bold!important;
+    border-radius:0.125rem 0.125rem 0.125rem 0.125rem!important;
+    box-shadow:0 -0.1875rem 0 0 #2c457a inset!important;
+    cursor:pointer!important;
+    text-decoration:none;
+}
+
+#api > .social > .intro,
+#api > .localAccount > .entry > .entry-item > label,
+#api > .localAccount > .entry > .entry-item > .password-label{
+    display:none!important;
+}
+
+
+#api > .localAccount > .entry > .buttons{
+    margin:1rem 0;
+}
+
+#api > .localAccount > .create{
+    position:absolute;
+    left:0;
+    top:2rem;
+    padding:0 1.25rem;
+    width:100%;
+}
+
+@media (min-width: 34rem) {
+    #api > .localAccount > .create{
+        padding:0 3rem;
+    }
+}
+
+#api > .localAccount > .create > p{
+    margin:0;
+    font-size:2rem;
+    line-height:2.25rem;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#api > .localAccount > .intro > h2{
+    margin:0;
+}
+
+#api > .social{
+    position:absolute;
+    bottom:2rem;
+    left:0;
+    padding:0 1.25rem;
+    width:100%;
+}
+
+@media (min-width: 34rem) {
+    #api > .social{
+        padding:0 3rem;
+    }
+}
+
+#api > .divider,
+#api > .localAccount > .divider{
+    text-align:center;
+}
